@@ -1,0 +1,31 @@
+.cont{
+    background-color: rgb(1, 20, 20);
+    color: rgb(227, 227, 237);
+
+    border: 5px solid rgb(50, 242, 7);
+    border-radius: 65px;
+
+    padding-left: 240px;
+    padding-bottom: 90px;
+    padding-right: 20px;
+    padding-top: 0px;
+
+    margin-top:150px;
+    margin-left:150px;
+
+    height: 44px;
+    width: 750px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cont ul li{
+    float: left;
+    padding-top: 50px;
+    padding-right: 90px;
+    padding-bottom: 60px;
+   
+    margin: auto;
+    list-style: none;
+}
+

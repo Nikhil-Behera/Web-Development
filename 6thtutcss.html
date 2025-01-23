@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+</head>
+<style>
+    .cont{
+        background-color: antiquewhite;
+        color: rgb(118, 14, 74);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+
+        border: 5px solid rebeccapurple;
+
+        padding:55px;
+        margin:30px;
+        /*we can also do padding/margin like this:
+        padding-top:67px;
+        padding-right:67px;
+        padding-bottom:67px
+        padding-left:78px
+        
+        padding: 56px 45px 39px 70px  -> padding: top right bottom left*/
+
+        border-radius: 18px;
+        height: 200px;
+        width: 380px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <h3>This lecture is about box model </h3>
+    <div class="cont">
+        <p  id="1st">
+            this is 1st para.
+        </p>
+    </div>
+    <div class="cont">
+        <p id="2nd">
+            this is 2nd para.
+        </p>
+    </div>
+    <div class="cont">
+        <p id="3rd">
+            this is 3rd para.
+        </p>
+    </div>
+</body>
+</html>

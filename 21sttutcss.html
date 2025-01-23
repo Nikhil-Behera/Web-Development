@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Introduction & Creating A Basic Grid</title>
+</head>
+<style>
+    .cont{
+        display: grid;
+        /* grid-template-columns: 150px 200px 240px; */
+        /* grid-template-columns: 200px auto auto; */
+        /* grid-template-columns: 2fr 2fr 2fr; */
+        /* Agar boht items hai to repeat function use karo. */
+        /* grid-template-columns: repeat(3,auto); */
+
+        grid-template-rows:1fr 1fr 4fr;
+        grid-auto-rows: 2fr; /*baki bache hue rows 2fr ho jate hai.(property hi bache hue rows ke liye hai.)*/
+        grid-gap: 3rem;
+
+    }
+    .item{
+        /* height: 90px;
+        width: 90px; */
+        background-color: bisque;
+        margin: 15px;
+        border: 3px solid plum;
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+    </div>
+</body>
+</html>

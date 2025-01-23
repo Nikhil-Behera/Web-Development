@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .cont{
+        display: flex;
+    }
+    .Card{
+        color: azure;
+        background-color: darkslategray;
+        /* border: 3px solid rgb(13, 204, 204); */
+
+        padding: 20px;
+        margin: 25px;
+
+        box-shadow: 13px 13px rgb(45,56,67);
+        /* box-shadow: -13px -13px rgb(45,56,67);      for shadow to look as if light is down */
+
+        /* box-shadow: 13px 13px 5px rgb(45,56,67);     for shadow to blur radius. */
+
+        /* box-shadow: 13px 13px 5px 18px rgb(45,56,67); for spread radius. */
+
+        /*box-shadow: offset-x offset-y blur-radius spread-radius*/
+
+        /* box-shadow: inset 15px 16px rgb(45,56,67);   for shadow inside box.*/   
+    }
+
+    .Card h2{
+        text-shadow: 4px 4px rgb(117, 121, 121);
+    }
+
+</style>
+<body>
+    <div class="cont">
+        <div class="Card" id="item-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sequi laboriosam dolorem.</p>
+        </div>
+        <div class="Card" id="item-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sequi laboriosam dolorem.</p>
+        </div>
+        <div class="Card" id="item-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sequi laboriosam dolorem.</p>
+        </div>
+    </div>
+</body>
+</html>

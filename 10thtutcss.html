@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute, Fixed, Relative and Sticky in CSS</title>
+</head>
+<style>
+    .cont{
+        border: 2px solid rgb(108, 27, 102);
+        background-color: rgb(230, 214, 193);
+        height: 5000px;
+    }
+    /*CSS psoitions are of 5 types: 1. static(default), 2.Absolute,3.Relative,4.Fixed,5.Sticky */
+    .box{
+        border: 5px solid darkmagenta;
+
+        font-size:large;
+        text-align: center;
+        font-family:fantasy;
+
+        height: 100px;
+        width: 100px;
+
+        margin: 4px;
+
+        display: inline-block;
+    }
+    #box1{
+         position: static;  /*This is the default position of every box. */
+    }
+    #box3{
+        position: relative;/*This is the position of the box relative to its original postion.*/
+        /* top: 14px;
+        right: 34px; */
+    }
+    #box4{
+        position: absolute;/*This is the position of the box relative to its parent container(here it is cont).*/
+        /* top: 56px;
+        left: 45px; */
+    }
+    #box2{
+        position:fixed;     /*This makws the box fixed even when you scroll your screen.*/
+        /* right: 4px; */
+    }
+    #box1{
+        position: sticky;
+        /* top: 4px; */
+    }
+    /*Fixed and sticky are both similar, but 
+If you make a  particular element inside a container as fixed, then irrespective of container height, as we scroll, the element stays at the same position till you scroll to end of web page.*/
+    
+</style>
+<body>
+<div class="cont">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>

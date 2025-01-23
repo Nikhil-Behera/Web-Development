@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditionals.</title>
+    <style>
+        div{
+            background-color: rgb(223, 171, 14);
+            margin: 45px 60px;
+            padding: 25px;
+            text-align: center;
+
+            border: 3px solid chartreuse;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+    <script>
+        var msg="hahah";
+        console.log(msg);
+
+        let a=45;
+        {
+            let a=23;
+            console.log(a);
+        }
+        console.log(a);
+
+        const c=56;
+        //c=89;
+        console.log(c);
+
+        let age=69;
+        if(age < 18){
+            console.log("tu daru nahi pi sakts mc");
+        }
+        else if(age >= 18){
+            console.log("peele daru mc");
+        }
+        else{
+            console.log("tu keplar 22B ka hai lawde.");
+        }
+
+        const angle = 45;
+        switch(angle){
+            case 45:
+                console.log("aadha hai og ka ");
+                break;
+
+            case 90:
+                console.log("yahi og angel hai");
+                break;
+
+            case 180:
+                console.log("duugna hai uska");
+                break;
+
+            default:
+                console.log("kya baat hai ");
+                break;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+    </div>
+</body>
+</html>

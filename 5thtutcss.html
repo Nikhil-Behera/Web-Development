@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #first{
+            color: aqua;
+            background-color: crimson;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            height: 360px;
+            width: 380px;
+
+            border: 16px;
+            border-color: darkblue;
+            border-style: solid;
+            border-radius: 17px;
+        }
+        #second{
+            color: rgb(96, 188, 244);
+            background-color: rgb(169, 8, 21);
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+
+            height: 400px;
+            width: 400px;
+
+            /* border: 15px solid hotpink; */
+            border-top:17px solid green;
+            border-right:15px solid lightslategrey;
+            border-bottom: 13px solid purple;
+            border-left: 11px solid rgb(96, 188, 244);
+
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        #third{
+            border: 4px solid darkorange;
+            font-size: 34px;
+            
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFUyv8xK5V-JgmMOPiRO_TYWSYFPrZCrYhg&s');/*this is the image address..*/
+            background-repeat: no-repeat;
+            background-position: center center;
+            /*center top
+            center right
+            center left
+            center bottom*/
+
+            /* background-position:67px 12px; */
+            
+
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>
+            This video is about borders and background...
+        </h2>
+    </div>
+    <div>
+        <p id="first">
+            this is my paragraph..
+        </p>
+    </div>
+
+    <div>
+        <p id="second">
+            this is my 2nd paragraph.
+        </p>
+    </div>
+
+    <div>
+        <p id="third">
+            This is the image of instagram.
+        </p>
+    </div>
+</body>
+</html>

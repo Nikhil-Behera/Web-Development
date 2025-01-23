@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property of CSS</title>
+    <style>
+        img{
+            height: 350px;
+            margin: auto;
+            display: block; /*Here the image comes to centre when display is changed to block...*/
+
+            border: 7px solid orangered;
+            border-radius: 14px;
+        }
+
+
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cont{
+            background-color: rgb(224, 181, 137);
+            width: 1500px;
+            border: 6px solid rgb(2, 2, 1);
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .box{
+            border: 5px solid red;
+            border-radius: 20px ;
+            background-color: cornflowerblue;
+
+            text-align: center;
+
+            width: 450px;
+            height: 240px;
+
+            padding: 30px;
+            margin: 15px;
+            
+            display: inline-block;
+
+            box-sizing: border-box; /*Due to this property the height and width of the element does not gets changed due to padding or margin...*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <header class="lolu">
+            <img src="download.jfif" alt="No image found">
+            <h3>
+                Oiiiii Mikeyyyyy....
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia illum quasi obcaecati.
+            </p>
+        </header>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam, fuga, perferendis, consequuntur laboriosam ad dignissimos at possimus deleniti eos est nihil quod aut quas id eaque sapiente magni corrupti inventore neque qui sunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ullam nulla accusantium quod iusto amet. Ullam doloribus amet voluptates veniam ipsam quaerat, magni exercitationem alias, tempora necessitatibus vel distinctio? Vitae distinctio fuga aliquid explicabo?
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam, fuga, perferendis, consequuntur laboriosam ad dignissimos at possimus deleniti eos est nihil quod aut quas id eaque sapiente magni corrupti inventore neque qui sunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ullam nulla accusantium quod iusto amet. Ullam doloribus amet voluptates veniam ipsam quaerat, magni exercitationem alias, tempora necessitatibus vel distinctio? Vitae distinctio fuga aliquid explicabo?
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam, fuga, perferendis, consequuntur laboriosam ad dignissimos at possimus deleniti eos est nihil quod aut quas id eaque sapiente magni corrupti inventore neque qui sunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ullam nulla accusantium quod iusto amet. Ullam doloribus amet voluptates veniam ipsam quaerat, magni exercitationem alias, tempora necessitatibus vel distinctio? Vitae distinctio fuga aliquid explicabo?
+        </div>
+    </div>
+</body>
+</html>

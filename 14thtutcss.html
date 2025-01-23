@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+</head>
+<style>
+    h2{
+        background-color: beige;
+        color: black;
+        text-align: center;
+    }
+    div p{
+        color: aqua;
+        background-color: black;
+    }
+    div li p{
+        color: coral;
+        background-color: aquamarine;
+    }
+    div > p{
+        color: palevioletred;   /*iska matlab ye hai ki div ke andar jo direct paragraph hai usko ye attributes dedo.*/
+    }
+
+</style>
+<body>
+    <h2>More on selectors.</h2>
+    <div class="cont">
+        <div class="inner">
+            <ul>
+                <li class="item">
+                    <p>
+                        first item in the list
+                    </p>
+            </li>
+            </ul>
+            <p>
+                first para.
+            </p>
+        </div>
+            <p>
+                second para.
+            </p>
+    </div>
+    <p>
+        outermost para.
+    </p>
+</body>
+</html>

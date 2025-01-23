@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js string functions.</title>
+</head>
+<body>
+        <script>
+            var str="hi lol bikhil here";
+            console.log(str);
+
+            var pos=str.indexOf("h");
+            console.log(pos);
+
+            pos=str.lastIndexOf("h");
+            console.log(pos);
+            //substring from a string
+
+            var substr="bruhhh how are ya?";
+            console.log(substr);
+
+            var pos1=substr.slice(2,6);
+            console.log(pos1);
+
+            pos1=substr.substring(2,6);
+            console.log(pos1);
+
+            var replaced=str.replace("lol","there");
+            console.log(replaced);
+
+            console.log(str.toUpperCase());
+            console.log(substr.toUpperCase());
+            console.log(str.toLowerCase());
+            console.log(substr.toLowerCase());
+
+            var newstr=str.concat("new words added");
+            console.log(newstr);
+
+            var whi6tespaces="   lot   of    blanks   ";
+            console.log(whi6tespaces.trim());//trims the whitespaces from front and behind and not in middle.
+            
+        </script>
+</body>
+</html>

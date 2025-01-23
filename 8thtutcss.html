@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors in CSS</title>
+</head>
+<style>
+    .container{
+        color:black;
+        border: 5px solid red;
+        border-radius: 15px;
+        background-color: burlywood;
+        padding: 50px;
+        margin: 90px 40px 60px 350px;
+        width: 600px;
+    }
+    .btn{
+        background-color: rgb(161, 7, 22);
+        color: rgb(83, 119, 239);
+        border: 2px solid rgba(51, 245, 12, 0.993);
+        border-radius:9px;
+        padding: 6px;
+        margin: 2px 2px 2px 2px ;
+
+        cursor:pointer;
+
+        font-size: 15px;
+
+        text-decoration: none;
+    }
+
+    .btn:hover{
+        color: rgb(4, 29, 186);
+        background-color: rgb(220, 91, 117);
+        border: 3px solid rgb(56, 56, 78)
+    }
+
+    .btn:visited{
+        background-color: chartreuse;
+    }
+    .btn:active{
+        background-color: darkorange;
+    }
+</style>
+<body>
+    <div id="cont1" class="container">
+        <h3>
+            This is my container 1
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in ipsa. Iusto, officia 
+             accusantium. Perferendis ex accusantium iure numquam itaque?
+        </p>
+        <a href="https://www.google.co.in" class="btn" target="_blank">Read More</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

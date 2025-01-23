@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+</head>
+<style>
+    .haha{
+        border: 3px solid peru;
+        background-color: antiquewhite;
+        text-align: center;
+        font-size: 50px;
+        display: none;
+    }
+    @media (max-width:300px){
+        #box1{
+            display: block;
+        }
+    }
+    @media (max-width:500px) and (min-width:300px) {
+        #box2{
+            display: block;
+        }
+    }
+</style>
+<body>
+    
+        <div id="box1"  class="haha">
+            iphone
+        </div>
+        <div id="box2"  class="haha">
+            tablet
+        </div>
+        <div id="box3"  class="haha">
+            computer
+        </div>
+        <div id="box4"  class="haha">
+            widescreen
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+</head>
+<style>
+    .cont{
+        display: block;
+        width: 450px;
+        margin: auto;
+    }
+    input{
+        display: block;
+    }
+    input[type="text"]{
+        padding: 20px;
+        border: 5px solid black;
+    }
+    input[type="submit"]{
+        padding: 14px;
+        color: rgb(129, 182, 164);
+        background-color: black;
+    }
+    input[type="password"]{
+        padding: 20px;
+        border: 5px solid black;
+    }
+</style>
+<body>
+    <div class="cont">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your username">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+
+        <ul>
+            <li class="list" id="item-1">1st</li>
+            <li class="list" id="item-2">2nd</li>
+            <li class="list" id="item-3">3rd</li>
+            <li class="list" id="item-4">4th</li>
+            <li class="list" id="item-5">5th</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties </title>
+</head>
+<style>
+    :root{
+        --col:rgb(63, 27, 27);    /*this is the method for defining global variables. this variable can be used anywhere*/
+    }
+    .cont{
+        display: flex;
+    }
+    .box{
+        height: 89px;
+        width: 89px;
+        background-color: cadetblue;
+        border: 4px solid rgb(60, 94, 96) ;
+        margin: 13px;
+
+        --colour:pink;              /*created a variable colour which stored colour pink.*/
+        background-color: var(--colour);  /*gave bacg. col. same as of the variable.*/
+    }
+    .cont{
+        background-color: var(--col); /*col is a global variable and colour cannot be used.*/
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+</html>

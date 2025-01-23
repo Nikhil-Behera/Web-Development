@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+</head>
+<style>
+    .lol{
+        border:5px solid turquoise;
+        height: 550px;
+        width: 960px;
+        /*initialize the container as a dlex container and not inbound or box container.*/
+        display:flex;
+        /*flex proeprties for flex box*/
+        flex-direction: row;    /*by defualt*/
+        flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+
+        /*we can combine both direction and wrap*/
+        flex-flow: row-reverse;
+
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around;
+
+        align-items: center;  /*aligns boxes vertically center*/
+    }
+    .cont{
+        text-align: center;
+        background-color: beige;
+        color: cadetblue;
+        margin: 18px;
+        padding: 16px;
+    }
+    #item-1{
+        flex-grow: 1;
+    }
+    #item-2{
+        flex-shrink: 2;
+    }
+</style>
+<body>
+    <h3>
+        This is flexbox Tutorial.
+    </h3>
+    <div class="lol">
+        <div class="cont" id="item-1">first box</div>               <!--div.cont#item-$*6-->
+        <div class="cont" id="item-2">second box</div>
+        <div class="cont" id="item-3">third box</div>
+        <div class="cont" id="item-4">fourth box</div>
+        <div class="cont" id="item-5">fifth box</div>
+        <div class="cont" id="item-6">sixth box</div>
+    </div>
+</body>
+</html>
