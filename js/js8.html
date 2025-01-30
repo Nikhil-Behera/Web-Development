@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert confirm and prompt</title>
+</head>
+<body>
+    <div class="comt">
+        <h2>
+            this is page..
+        </h2>
+    </div>
+    <script>
+        //Alert tag-doesn't return anything(unidefined);
+
+        //alert("This is a message");
+
+        // let name;
+        // name=prompt("Enter the name","guest");
+        // console.log(name);
+
+        // let ask=confirm("Do you really want to quit?");
+        // console.log(ask);
+
+        // if(ask==true){
+        //     console.log("Quitting the program...");
+        // }
+        // else{
+        //     console.log("Quitting not successful.");
+        // }
+
+        let age=prompt("Enter the age of the user: ");
+        console.log(age);
+
+        if(age >= 18){
+            console.log("The user is invited to the club...");
+        }
+        else{
+            console.log("User denied due to age issues.");
+        }
+
+    </script>
+</body>
+</html>
