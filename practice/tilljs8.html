@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS practice.</title>
+    <title>Random project</title>
 </head>
 <body>
-    
+    <div class="cont1">
+        <h2>
+            Random side project
+        </h2>
+        <p>
+            Enter the details in the prompt.
+        </p>
+    </div>
+    <script>
+        let boss={
+            name:"Nikhil",
+            age:69,
+            salary:"420k"
+        }
+        let employees=["emp1","emp2","emp3","emp4","emp5"];
+
+        employees.forEach(function f(element){
+                console.log("Employee is "+element);
+        })
+
+        /*From here the functional part starts.*/
+
+        alert("Enter the details as asked...");
+
+        let ans=prompt("enter the name: ");
+
+        for(ele in boss){
+            if(ans == `${name}`){
+                console.log(`${name} is the name of the boss...`);
+                console.log(`The age of the boss till now is: ${age}`)
+                console.log("The salary of the boss is : ${salary}");
+            }
+            else{
+                continue;
+            }
+        }
+        let i;
+        for(i=0;i<employees.length;i++){
+            if(ans == employees[i]){
+                console.log("The id of the employee found is: "+ employees[i]);
+            }
+        }
+    </script>
 </body>
 </html>
