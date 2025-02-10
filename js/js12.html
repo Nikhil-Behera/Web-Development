@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settime out and clear time out in JS</title>
+</head>
+<body>
+    <div class="cont"><h3>this is mah container.</h3></div>
+    <script>
+        console.log("This is my string in js");
+
+        // settimeout --> allows us to run the function once after the interval.
+        // setinterval --> helps to run the function after many times after the interval of time.
+
+        
+        let name=prompt("Enter your name","user");
+
+        function appreciate(name){
+            console.log( name + " you are a good coder and u will succeed !! ");
+        }
+
+        let timeout=setTimeout(appreciate, 3000 ,"Nikhil"); //note -> u can't give an argument inside the setimeout func 
+        //                               in this case i had to use the func as it is thats why it's showing undefined.
+        //  Now in the variable timeout , setimeout returns an id which can be sued with cleartimeout to not show the effects of settimeout.
+        
+        clearTimeout(timeout);
+
+        let intervalId=setInterval(appreciate,2000,"nikhil");
+        clearInterval(intervalId);
+    </script>
+</body>
+</html>
