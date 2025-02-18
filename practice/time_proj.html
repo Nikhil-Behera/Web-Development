@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthdate Day guesser</title>
+</head>
+<body>
+    <div class="main">
+        <h3>
+            Enter the year at which you want to guess your birthday day...
+        </h3>
+    </div>
+    <script>
+        alert("Enter the date of your birthday...");
+
+        let yr = prompt("Enter the year","2005");
+        console.log("The year entered is: " + yr);
+
+        let mnth = prompt("enter the month","00");
+        console.log("The month entered is: " + mnth);
+
+        let dy = prompt("Enter the dayno of your birthday: ","01");
+        console.log("The day entered is: " + dy);
+
+        console.log("The date entered is : "+yr+"/"+mnth+"/"+dy);
+
+        let date1 =  new Date(yr,mnth-1,dy,0,0,0,0);
+        let daysofWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let ans = daysofWeek[date1.getDay()];
+
+        console.log("The day of your birthday is: " + ans);
+    </script>
+</body>
+</html>
