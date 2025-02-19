@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="cont">
+        <p>
+            this is a tutorial on arrow functions in JS
+        </p>
+    </div>
+    <script>
+
+        //NOrmal way to write a function.
+        function greet(){
+            console.log("Good morning everybody...");
+        }
+        greet();
+
+        //function using arrow method...
+        greet = () =>{
+            console.log("Hello everyone..");
+        }
+        greet();
+
+        setTimeout( () =>{
+            console.log("Inside settimeout...");
+        }
+        ,2000)
+
+        let sum = (a,b)=>{
+            let c=0;
+            c=a+b;
+            return c;
+        }
+
+        let sum2 = (a,b)=> a+b; //more shortcut wayy...
+
+        let half = a => a/2; //iss case me 2 argument nahi de sakte , sirf ek hi argument ke liye hai ye shortcut..
+
+        let greet1 = ()=> console.log("Hey again!!"); //agar koi argument nahi hai to khali bracket dena hi padega...
+        greet1();
+
+        let obj = {
+            names : ["budhu","ahha","alas","bruv"],
+            speak(){
+                this.names.forEach(student => {                 //this allows to use the names array in this object (in this case).
+                    console.log("Hello there " + student);
+                });
+            }
+        }
+        obj.speak();
+
+    </script>
+</body>
+</html>
