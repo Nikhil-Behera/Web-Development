@@ -19,8 +19,13 @@
         function appreciate(name){
             console.log( name + " you are a good coder and u will succeed !! ");
         }
+        appreciate(name);
 
-        let timeout=setTimeout(appreciate, 3000 ,"Nikhil"); //note -> u can't give an argument inside the setimeout func 
+        setTimeout(() => {
+            console.log(name + "You will succeed");
+        }, 3000);
+
+        //let timeout=setTimeout(appreciate, 3000 ,"Nikhil"); //note -> u can't give an argument inside the setimeout func 
         //                               in this case i had to use the func as it is thats why it's showing undefined.
         //  Now in the variable timeout , setimeout returns an id which can be sued with cleartimeout to not show the effects of settimeout.
         
