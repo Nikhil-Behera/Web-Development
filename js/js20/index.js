@@ -9,11 +9,11 @@ const contact = fs.readFileSync('./contact.html');
 
 const server = http.createServer((req, res) => {
     console.log(req.url);
-    url = req.url;
+    const url = req.url;        //added const before url (good practice).
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     
-    if(url == '/.html'){
+    if(url == '/'){         // changed /.html to just '/' .
         res.end(home);
     }
     else if(url == '/about'){
