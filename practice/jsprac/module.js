@@ -20,9 +20,19 @@ function multit(arr){
     });
     return prod;
 }
+function divit(a,b){            // added division function later.
+    let c = a/b;
+    return c;
+}
+function modulo(a,b){
+    let c = a%b ;
+    return c;
+}
 
 module.exports ={
     add:addit,
     sub:subit,
-    multiply:multit
+    multiply:multit,
+    divide:divit,
+    modulus : modulo
 };
