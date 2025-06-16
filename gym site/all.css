@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.fst{
+    background-image: url('weight-workout.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding:45px;
+
+    text-align: center;
+    color: rgb(176, 218, 86);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    background-color:rgb(14, 14, 14);
+    border-top: 7px solid rgb(64, 41, 13);
+    border-left: 7px solid rgb(135,92,39);
+    border-right: 7px solid rgb(135,92,39);
+    border-bottom: 7px solid rgb(64, 41, 13);
+    border-radius: 20px;
+
+    margin: 0px;
+    padding: 30px;
+
+    /* box-sizing: border-box; */
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    float: left;
+    text-decoration: solid;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 130px;
+}
+
+.navbar button{
+    color:aliceblue;
+    font-size: 19px;
+    background-color: rgb(14, 14, 14);
+    border: 2px solid rgb(14, 14, 14);
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.navbar a button :hover{
+    background-color: aquamarine;
+}
