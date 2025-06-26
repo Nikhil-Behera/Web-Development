@@ -1,1 +1,0 @@
-console.log("this is tutorial 23 of javascript...");
