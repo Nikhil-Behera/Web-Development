@@ -42,3 +42,17 @@ let str2 = " name"
 let str3 = str1+str2
 // console.log(str3)
 
+// strict check (===)
+// console.log("2"==2)     // this converts "2" into a number(2) ans 2==2
+// console.log("2"===2)    // here === checks the data types of both , string != number
+
+let score = 400;
+// console.log(score)
+
+let bal = new Number(100)
+// console.log(bal)
+
+// console.log(bal.toString()); // "100"
+// console.log(bal.toString().length); 
+console.log(bal.toFixed(2));
+
