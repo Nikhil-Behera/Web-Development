@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<style>
+    .bd{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body class="bd">
+    <div class="first">
+        <h2 id = "heading1" class = "head1">learning DOM <span style="display: none;">hi there</span></h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!-- document.querySelector('h2')
+<h2 id=​"heading1" class=​"head1">​…​</h2>​
+document.querySelector('h3')
+<h3>​Lorem ipsum dolor sit amet.​</h3>​
+document.querySelector('#heading1')
+<h2 id=​"heading1" class=​"head1">​…​</h2>​
+document.querySelector('.head1')
+<h2 id=​"heading1" class=​"head1">​…​</h2>​ -->
+
+
+
+<!-- const templist = document.querySelectorAll('li')
+undefined
+templist
+NodeList(3) [li, li, li]
+templist.keys
+ƒ keys() { [native code] }
+templist.keys()
+Array Iterator {}constructor: ƒ Iterator()[[Prototype]]: Array Iterator
+templist[0].style.color
+''
+templist[0].style.color='red'
+'red'
+templist.forEach((l)=>{
+    l.style.color = green
+})
+VM2563:2 Uncaught ReferenceError: green is not defined
+    at <anonymous>:2:21
+    at NodeList.forEach (<anonymous>)
+    at <anonymous>:1:10
+(anonymous) @ VM2563:2
+(anonymous) @ VM2563:1
+templist.forEach((l)=>{
+    l.style.color = 'green'
+})
+undefined
+templist.forEach((l)=>{
+    l.style.backgroundColor = 'indigo'
+})
+undefined
+templist.forEach((l)=>{
+    l.style.backgroundColor = 'yellow'
+})
+undefined
+templist.forEach((l)=>{
+    l.style.backgroundColor = 'tangerine'
+})
+undefined
+templist.forEach((l)=>{
+    l.style.backgroundColor = 'none'
+})
+undefined
+templist.forEach((l)=>{
+    l.style.backgroundColor = 'black'
+})
+undefined -->
+
+<!-- document.querySelectorAll('h2')
+NodeList(11) [h2.vector-pinnable-header-label, h2#History, h2#Language, h2#Standard_library, h2#C++_Core_Guidelines, h2#Compatibility, h2#See_also, h2#Footnotes, h2#References, h2#Further_reading, h2#External_links]
+allh2 = document.querySelectorAll('h2')
+NodeList(11) [h2.vector-pinnable-header-label, h2#History, h2#Language, h2#Standard_library, h2#C++_Core_Guidelines, h2#Compatibility, h2#See_also, h2#Footnotes, h2#References, h2#Further_reading, h2#External_links]
+allh2
+NodeList(11) [h2.vector-pinnable-header-label, h2#History, h2#Language, h2#Standard_library, h2#C++_Core_Guidelines, h2#Compatibility, h2#See_also, h2#Footnotes, h2#References, h2#Further_reading, h2#External_links]
+allh2.forEach((val)=>{
+    val.style.color=green;
+})
+VM482:2 Uncaught ReferenceError: green is not defined
+    at <anonymous>:2:21
+    at NodeList.forEach (<anonymous>)
+    at <anonymous>:1:7
+(anonymous) @ VM482:2
+(anonymous) @ VM482:1
+allh2.forEach((val)=>{
+    val.style.color='green';
+})
+undefined
+allh2.forEach((val)=>{
+    val.style.color='green';
+})
+undefined
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+})
+undefined
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.style.padding = 56px;
+})
+VM561:4 Uncaught SyntaxError: Invalid or unexpected token
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.padding = 56px;
+})
+VM566:4 Uncaught SyntaxError: Invalid or unexpected token
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.style.padding = '56px';
+})
+undefined
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.style.padding = '6px';
+})
+undefined
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.style.padding = '6px';
+    val.style.margin = '12px';
+})
+undefined
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.style.padding = '6px';
+    val.style.margin = '12px';
+    val.innerText = 'lmao';
+})
+undefined
+
+allh2.forEach((val)=>{
+    val.style.color='green';
+    val.style.backgroundColor = 'pink';
+    val.style.padding = '6px';
+    val.style.margin = '12px';
+    val.innerHTML = '<h3> HI there Nikhil</h3>';
+})
+undefined
+ -->
