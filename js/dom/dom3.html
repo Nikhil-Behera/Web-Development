@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+<body style="background-color:rgb(5, 28, 28);color: azure;">
+    
+</body>
+<script>
+    const div1 = document.createElement('div')
+    // console.log(div1);
+    div1.id = 'fstID'
+    div1.setAttribute("title","title is here")
+    div1.style.backgroundColor="green";
+    div1.style.padding="10px";
+
+    const text1= document.createTextNode("hi there");
+    div1.appendChild(text1);
+
+    document.body.appendChild(div1)
+
+    const div2 = document.createElement("div");
+    console.log(div2)
+    div2.id = 'scnd';
+    div2.style.backgroundColor="yellow";
+    div2.style.color="red";
+    div2.style.padding='34px';
+
+    const text2 = document.createTextNode("created myself");
+    div2.appendChild(text2);
+
+    document.body.appendChild(div2)
+
+</script>
+</html>
