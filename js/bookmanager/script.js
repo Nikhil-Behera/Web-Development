@@ -1,7 +1,7 @@
-const name = document.getElementById('.book_name');
-const genre = document.getElementById('.genre');
-const pages = document.getElementById('.pages');
-const author = document.getElementById('.author');
+const name = document.getElementById('book_name');
+const genre = document.getElementById('genre');
+const pages = document.getElementById('pages');
+const author = document.getElementById('author');
 
 document.getElementById("submit").addEventListener("click", () => {
     addBook(name.value, genre.value, pages.value, author.value);
