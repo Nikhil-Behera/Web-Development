@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-1</title>
+</head>
+<body>
+    <div id="btn"><button>Submit</button></div>
+    <div>
+        <ul id="ul">
+            <li id="li1">hi</li>
+            <li id="li2">lol</li>
+            <li id="li3">heyy</li>
+            <li id="li4">brahmos</li>
+            <li id="li5">blyat</li>
+        </ul>
+    </div>
+    <div>
+        <a id="search" href="https://google.com" target="_blank">google</a>
+    </div>
+</body>
+<script>
+    // document.getElementById('btn').onclick = ()=>{
+    //     alert("Clicked on submit");
+    // }
+
+    document.getElementById('btn').addEventListener('click',(e)=>{
+        alert("CLicked on submit");
+        console.log(e);
+        
+    },false)
+
+
+    // document.getElementById('ul').addEventListener("click",()=>{
+    //     console.log("in ul ");
+        
+    // },false)
+
+    document.getElementById('ul').addEventListener("click",(e)=>{
+        console.log("in ul ");
+        
+    },true)
+
+    // document.getElementById('li1').addEventListener("click",()=>{
+    //     console.log("inside 1st li");
+        
+    // },false)
+
+    // document.getElementById('li1').addEventListener("click",(e)=>{
+    //     console.log("inside 1st li");
+    //     e.stopPropagation();
+    // },true)
+
+    // document.getElementById("search").addEventListener("click",(e)=>{
+    //     e.preventDefault();
+    //     console.log("clicked on google..");
+    // },false)
+    
+    /*on clicking the li , the clicked should get disappeared...*/
+
+    document.getElementById('ul').addEventListener("click",(e)=>{
+        const to_be_removed = e.target.parentNode
+        to_be_removed.remove()
+    })
+    
+
+
+</script>
+</html>
