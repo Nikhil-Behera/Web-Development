@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypress</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: azure;
+    }
+    .main{
+        text-align: center;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <div class="main">
+        <h2>Press any key...</h2>
+    </div>
+</body>
+<script>
+    window.addEventListener("keydown",(e)=>{
+        const div1 = document.createElement('li')
+        div1.textContent=`You pressed : ${e.key}`
+        document.querySelector('.main').appendChild(div1)
+    })
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js functions</title>
+</head>
+<body style="background-color: rgb(6, 7, 7); color: aliceblue;">
+    <div class="first">
+        Hi there
+    </div>
+    <button class="btn"> Click Me </button>
+</body>
+<script>
+    setTimeout(()=>{
+        console.log("hi");
+    },2000)
+
+    const naam = ()=>{
+        console.log("Nikss");
+    }
+    setTimeout(naam,2000)
+
+    const changed_heading = ()=>{
+        const newdoc = document.querySelector('.first')
+        newdoc.innerHTML="Hey NIkss"
+        document.body.appendChild(newdoc)
+    }
+    const change_me=setTimeout(changed_heading,2000)
+
+    document.querySelector(".btn").addEventListener("click",()=>{
+        clearTimeout(change_me)
+        console.log("Stopped the change..")
+    })
+    
+</script>
+</html>

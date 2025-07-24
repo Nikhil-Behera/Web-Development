@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js functions</title>
+    <style>
+        .first{
+            text-align: center;
+        }
+        .start{
+           margin-left: 725px;
+        }
+        .stop{
+           margin-left: 725px;
+           margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(6, 7, 7); color: aliceblue;">
+    <div class="first">
+        <h2 class="Heading_1"> Hello again </h2>
+    </div>
+    <button class="start"> Start </button>
+    <button class="stop"> Stop </button>
+</body>
+
+<script>
+    // const sayDate = (str)=>{
+    //     console.log(`${str}`)
+    // }
+    // const Interval_id=setInterval(sayDate,2000,"Hi")
+
+    // clearInterval(Interval_id)
+
+    document.querySelector('.start').addEventListener("click",()=>{
+        const my_function = (str)=>{
+            console.log(`Hi ${str}`,Date.now())
+        }
+        interval_id=setInterval(my_function,1000,"User")
+    })
+
+    document.querySelector(".stop").addEventListener("click",()=>{
+        clearInterval(interval_id)
+    })
+</script>
+
+</html>
