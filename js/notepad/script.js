@@ -43,6 +43,26 @@ function saveNotes(notesArray) {
     localStorage.setItem('my-notes', JSON.stringify(notesArray))
 }
 
+
+function display_notes(){
+    
+    const notes = getNotes()
+    const note_container = document.querySelector(".notes_container")
+    
+    note_container.innerHTML = '';
+    
+    notes.forEach(note => {
+        const display_div = document.createElement("div")
+        const display_title = document.createElement("h3")
+        display_title.textContent = note.title
+        const display_content = document.createElement("p")
+        display_content.textContent = note.text
+        
+        display_div.appendChild(display_title)
+        display_div.appendChild(display_content)
+        note_container.appendChild(display_div)
+    })
+}
 document.querySelector(".submit").addEventListener("click",()=>{
     const titleinput = document.querySelector(".note-title")
     const textinput = document.querySelector(".note_text")
@@ -53,8 +73,15 @@ document.querySelector(".submit").addEventListener("click",()=>{
         text:textinput.value
     }
 
-    saveNotes(note)
+    const notes = getNotes();
+    notes.push(note);
 
-    
+    saveNotes(notes)
+
+    titleinput.value = "";
+    textinput.value = "";
+
+    display_notes()
 })
 
+display_notes()
