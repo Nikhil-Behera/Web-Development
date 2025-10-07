@@ -6,7 +6,7 @@ const display_description = document.querySelector(".description")
 
 async function get_weather(){
     try{
-        const res =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input_city.value}&appid=548d8317324f91529ba02df5c9f0d399`)
+        const res =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input_city.value}&appid=496c698791ea225afcc26da35483087f`)
         if(!res.ok){
             // const div = document.createElement("div")
             // div.textContent = "Error During Fetching!!!"
