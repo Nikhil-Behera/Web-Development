@@ -1,0 +1,23 @@
+.usercard{
+    margin:25px;
+    padding: 16px;
+    background-color:rgb(1, 9, 60);
+
+    border : 4px solid peru;
+    border-radius: 19px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+}
+
+#user-img {
+    width: 150px;
+    height: 50%;
+    border-radius: 50%;
+
+    display: flex;
+    margin:auto;
+    margin-bottom: 10px;
+}

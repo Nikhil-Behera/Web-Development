@@ -16,6 +16,9 @@ const cafeicon = L.icon({
     popupAnchor:[1,-34]
 })
 
+let userLat = 0;
+let userLng = 0;
+
 const map = L.map('map').setView([0, 0], 8)
 const marker = L.marker([0, 0],{ icon:myicon}).addTo(map)
 
@@ -27,45 +30,56 @@ L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=0BVAkB
 }).addTo(map)
 
 if (navigator.geolocation) {
-    // console.log("Geolocation availaible...")
+    // console.log("Geolocation available...")
 
     navigator.geolocation.getCurrentPosition((pos) => {
-        let lat = pos.coords.latitude
-        let lng = pos.coords.longitude
+        userLat = pos.coords.latitude;
+        userLng = pos.coords.longitude;
 
-        // console.log(lat,lng)
+        map.setView([userLat, userLng], 13)
+        marker.setLatLng([userLat, userLng])
 
-        map.setView([lat, lng], 13)
-        marker.setLatLng([lat, lng])
-
-        const nominatimUrl = `https://nominatim.openstreetmap.org/search?q=cafe&format=json&bounded=1&viewbox=${lng - 0.05},${lat - 0.05},${lng + 0.05},${lat + 0.05}&limit=50`;
+        const nominatimUrl = `https://nominatim.openstreetmap.org/search?q=cafe&format=json&bounded=1&viewbox=${userLng - 0.05},${userLat - 0.05},${userLng + 0.05},${userLat + 0.05}&limit=50`;
 
         async function getcafedata(){
-            try{
+            try {
                 const response = await fetch(nominatimUrl)
                 const data = await response.json()
                 console.log(data)
                 addcafemarkers(data)
-            }
-            catch(error){
+            } 
+            catch(error) {
                 console.error(`Error occured: ${error.message}`)
-            }
-            finally{
+            } 
+            finally {
                 console.log("Performed cafe data function.")
             }
         }
 
         getcafedata()
-    }
-    ,(error)=>{
-        console.error(`Error while getting live loaction : ${error.message}`)
-    }
-)
-}
-else{
+
+    }, (error) => {
+        console.error(`Error while getting live location : ${error.message}`)
+    });
+
+} else {
     console.error("This browser doesn't support Live Location !!")
 }
 
+// Center button functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const centerBtn = document.getElementById('center-btn');
+    if (centerBtn) {
+        centerBtn.addEventListener('click', function() {
+            if (userLat !== 0 && userLng !== 0) {
+                map.setView([userLat, userLng], 13);
+                marker.setLatLng([userLat, userLng]);
+            }
+        });
+    }
+});
+
+// Cafe marker addition function
 function addcafemarkers(cafes){
     if(cafes.length == 0){
         console.log("There is no cafe!")

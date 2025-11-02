@@ -1,12 +1,13 @@
 import React from 'react'
 import lemon from '../assets/lemon.jpg'
+import "./Usercard.css"
 
-const Usercard = () => {
+const Usercard = (props) => {
   return (
     <div className='usercard'>
-        <p id='user-intro'>Hello Nikhil</p>
-        <img id='user-img' src={lemon} alt="Nikhil"></img>
-        <p id='user-desc'>Description here!!</p>
+        <p id='user-intro'>Hello {props.name}</p>
+        <img id='user-img' src={props.image} alt={props.name}></img>
+        <p id='user-desc'>Description : {props.desc}</p>
     </div>
   )
 }
