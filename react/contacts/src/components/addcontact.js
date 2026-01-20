@@ -2,7 +2,7 @@ import React from 'react'
 class AddContact extends React.Component {
     state = {
         name : "",
-        email : ""
+        age : ""
     }
     render(){
         return(
@@ -10,11 +10,15 @@ class AddContact extends React.Component {
                 <form className='ui form'>
                     <div className='field'>
                         <label>Name</label>
-                        <input type='text'  placeholder='Name'/>
+                        <input type='text'  placeholder='Name' value={this.state.name} onChange={(e)=>{
+                            this.setState({name:e.target.value})
+                        }}/>
                     </div>
                     <div className='field'>
                         <label>Age</label>
-                        <input type="number"  placeholder='Age'/>
+                        <input type="number"  placeholder='Age' value={this.state.name} onChange={(e)=>{
+                            this.setState({name:e.target.value})
+                        }}/>
                     </div>
                     <button className = "ui button blue">Add</button>
                 </form>
