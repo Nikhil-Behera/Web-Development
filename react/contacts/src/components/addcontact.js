@@ -1,4 +1,5 @@
 import React from 'react'
+import {Navigate} from "react-router-dom"
 class AddContact extends React.Component {
     state = {
         name : "",
@@ -12,13 +13,19 @@ class AddContact extends React.Component {
             alert("Please enter all the credentials !!")
             return
         }
-        console.log(this.state)
+        // console.log(this.state)
 
         this.props.addContactHandler(this.state)
-        this.setState({name:"",age:""})
+        this.setState({name:"",age:"",redirect:true})
+        
     }
 
     render(){
+
+        if(this.state.redirect){
+            return <Navigate to={"/home"} />
+        }
+
         return(
             <div className='ui main'>
                 <form className='ui form' onSubmit={this.add}>
@@ -34,7 +41,7 @@ class AddContact extends React.Component {
                             this.setState({age:e.target.value})
                         }}/>
                     </div>
-                    <button className = "ui button blue">Add</button>
+                    <button type='submit' className='ui button blue'>ADD</button>
                 </form>
             </div>
         );
